@@ -1,7 +1,7 @@
 class ParksController < ApplicationController
   
   def index
-    @parks = Park.all
+    @parks = Park.paginate(:page => params[:page], per_page: 5)
     json_response(@parks)
   end
 
