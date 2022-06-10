@@ -1,24 +1,38 @@
-# README
+# Park Finder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### An api that returns National and State Parks.
 
-Things you may want to cover:
+#### By Emilio Gonzales
 
-* Ruby version
+## Technologies Used
 
-* System dependencies
+* _Ruby_
+* _Rails_
+* _RSpec_
+* _Shoulda Matchers_
+* _Will_Paginate_
 
-* Configuration
+## Description
+_An api that will return to the user state and national parks, and their locations. This data is split into pages with 5 parks per page, and limiting output to "name" and "location" data._
 
-* Database creation
+## Setup/Installation Requirements
+* _Clone this repository to your desktop_
+* _Navigate to the top level of parks_lookup main branch and open in code editor_
+* _run <code>postgres</code> in terminal_
+* _to recreate the database:_
+  >run <code>psql parks_lookup < database_backup.sql</code>
+  ><br>_then run <code>createdb -T parks_lookup parks_lookup_test_</code>
+* _run <code>bundle</code> in terminal to add gems_
+* _run <code>rspec</code> in terminal to test code_
+* _run <code>rails s</code> in terminal to test api_
+* _append localhost:3000/parks with <code>?page=<page_number></code> to look at each page_
 
-* Database initialization
 
-* How to run the test suite
+## Known Bugs
+* _Search function isn't compatible with pagination_
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-* Deployment instructions
-
-* ...
+## Contact Information
+Copyright (c) _2022_ _Emilio Gonzales_
