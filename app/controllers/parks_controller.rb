@@ -1,6 +1,11 @@
 class ParksController < ApplicationController
   
   def index
+    @parks = Park.all
+    json_response(@parks)
+  end
+
+  def search
     name = params[:name]
     @parks = Park.search(name)
     json_response(@parks)
