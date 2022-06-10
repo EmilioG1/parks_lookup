@@ -29,7 +29,7 @@ _An api that will return to the user state and national parks, and their locatio
 
 
 ## Known Bugs
-* _Search function isn't compatible with pagination_
+* _Search function isn't compatible with pagination...yet_
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
