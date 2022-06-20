@@ -1,3 +1,5 @@
+require 'pry'
+
 class ParksController < ApplicationController
   
   def index
@@ -8,7 +10,7 @@ class ParksController < ApplicationController
   def search
     name = params[:name]
     @parks = Park.search(name)
-    json_response(name)
+    json_response(@parks)
   end
 
   def show

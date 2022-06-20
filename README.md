@@ -25,11 +25,12 @@ _An api that will return to the user state and national parks, and their locatio
 * _run <code>bundle</code> in terminal to add gems_
 * _run <code>rspec</code> in terminal to test code_
 * _run <code>rails s</code> in terminal to test api_
-* _append localhost:3000/parks with <code>?page=<page_number></code> to look at each page_
-
+* _to test API use Postman or web browser:_
+  >_append localhost:3000/parks with <code>?page=<page_number></code> to look at each page_
+  ><br>_append localhost:3000/parks with <code>?name=park_name</code> to look at each park individually_
 
 ## Known Bugs
-* _Search function isn't compatible with pagination...yet_
+* _No known bugs_
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
